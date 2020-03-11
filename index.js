@@ -35,8 +35,9 @@ function addNumbers(num1, num2) {
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(/* code here */) {
-  /* code here */
+function sayGoodbye(name) {
+  return `Goodbye, ${name}. Have a great day.`;
+
 }
 
 /**
@@ -327,9 +328,9 @@ if (typeof exports !== 'undefined') {
   if (appleIndex) { module.exports.appleIndex = appleIndex }
 
   if (isItAnApple) { module.exports.isItAnApple = isItAnApple }
-  
 
-  
+
+
   if (carMaker) { module.exports.carMaker = carMaker }
   if (getCarInfoByIndex) { module.exports.getCarInfoByIndex = getCarInfoByIndex }
   if (getLastCarInfo) { module.exports.getLastCarInfo = getLastCarInfo }
@@ -338,5 +339,5 @@ if (typeof exports !== 'undefined') {
   if (getModelYears) { module.exports.getModelYears = getModelYears }
   if (getOlderCars) { module.exports.getOlderCars = getOlderCars }
   if (getGermanCars) { module.exports.getGermanCars = getGermanCars }
- 
+
 }

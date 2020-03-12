@@ -81,10 +81,11 @@ function temperatureCtoF(t) {
 function temperatureInF(num1, wea) {
   
   if (wea =="C") {
-    let F = num1 *(9/5) + 32;
+    temperatureCtoF(num1);
+  
 
   } 
-    else {F= num1;
+    else { let F= num1;
     }
     return Math.round(F)+"F";
   
@@ -109,9 +110,9 @@ function temperatureInF(num1, wea) {
  * }
 */
 function makePersonObject(id , name, email) {
-    return "id: " +id/
-            "name: "+ name/
-           "email: " + email;
+   var obj = {"id:": id, "name:":name, "email": email}
+
+   return obj;
 }
 
 /**

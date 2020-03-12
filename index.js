@@ -80,15 +80,18 @@ function temperatureCtoF(t) {
 */
 function temperatureInF(num1, wea) {
   
-  if (wea =="C") {
-    let F = num1 *(9/5) + 32;
-    
-  
+  if (wea ="C") {
+
+    let F = temperatureCtoF(num1);
+    return Math.round(F)+"F";
 
   } 
-    else { let F= num1;
+    else { let F = num1;
+
+      return Math.round(F);
     }
-    return Math.round(F)+"F";
+
+    
   
   /* code here */
 }
@@ -112,12 +115,8 @@ function temperatureInF(num1, wea) {
 */
 function makePersonObject(id , name, email) {
    var person= {
-
-   
-
-   return obj;
-}
-
+   }
+  }
 /**
  * ### Challenge `getName`
  * 

@@ -80,15 +80,15 @@ function temperatureCtoF(t) {
 */
 function temperatureInF(num1, wea) {
   
-  if (wea ="C") {
+  if (wea ==="C") {
 
-    let F = temperatureCtoF(num1);
-    return Math.round(F)+"F";
+    let F = num1 *(9/5) + 32;
+    return Math.round(F) + "F";
 
   } 
-    else { let F = num1;
+    else { 
 
-      return Math.round(F);
+      return Math.round(num1) + "F";
     }
 
     

@@ -78,7 +78,16 @@ function temperatureCtoF(t) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
+function temperatureInF(num1, wea) {
+  
+  if (wea =="C") {
+    let F = num1 *(9/5) + 32;
+
+  } 
+    else {F= num1;
+    }
+    return Math.round(F)+"F";
+  
   /* code here */
 }
 
@@ -99,8 +108,10 @@ function temperatureInF(/* code here */) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id , name, email) {
+    return "id: " +id/
+            "name: "+ name/
+           "email: " + email;
 }
 
 /**

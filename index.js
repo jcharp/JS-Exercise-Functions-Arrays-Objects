@@ -144,7 +144,7 @@ function getName( {id, name, email}){
     
   
   return "Hello, my name is " + name;
-  
+
   };
 
       
@@ -170,8 +170,14 @@ function getName( {id, name, email}){
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(arr) {
+  for (let i = 1; i < arr.length; i++){
+
+    if (arr[i]= "apple"){
+      return i;
+    }
+    
+  }
 }
 
 /**
